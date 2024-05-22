@@ -1,0 +1,37 @@
+{
+  "name": "TakeHomeTask",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "pretty": "prettier . --write",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.32.1",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.0",
+    "react-router-dom": "^6.23.0"
+  },
+  "devDependencies": {
+    "@tanstack/react-query-devtools": "5.32.1",
+    "@types/node": "^20.12.8",
+    "@types/number-to-words": "^1.2.3",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-slick": "^0.23.13",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "autoprefixer": "10.4.19",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  }
+}

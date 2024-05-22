@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../sf-pro-text_regular.woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Text Semibold';
+  src: url('../sf-pro-display_semibold.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SF Pro Icons';
+  src: url('../sf-pro-icons-regular.woff2');
+}
