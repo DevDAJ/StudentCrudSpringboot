@@ -70,7 +70,7 @@ RUN adduser \
 USER appuser
 
 # Copy the executable from the "package" stage.
-COPY --from=package build/target/app.jar app.jar
+COPY --from=package build/target/assignment-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
