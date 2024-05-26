@@ -11,6 +11,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -40,13 +41,13 @@ public class StudentsController {
         return "Student sucessfully added";
     }
 
-    @PatchMapping("/:id")
-    public Students patchStudent(@RequestParam int id, @RequestBody Students students) {
+    @PatchMapping("/{id}")
+    public Students patchStudent(@PathVariable int id, @RequestBody Students students) {
         return studentService.updateStudemts(id, students);
     }
 
-    @DeleteMapping("/:id")
-    public String deleteStudent(@RequestParam int id) {
+    @DeleteMapping("/{id}")
+    public String deleteStudent(@PathVariable int id) {
         studentService.deleteStudents(id);
         return "Successfully sent student to the void realm";
     }

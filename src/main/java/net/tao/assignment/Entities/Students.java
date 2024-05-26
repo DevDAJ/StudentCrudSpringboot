@@ -24,6 +24,7 @@ public class Students {
     @Setter
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "INT(10) UNSIGNED")
     private int id;
 
     @NotNull
@@ -34,7 +35,7 @@ public class Students {
 
     @Getter
     @Setter
-    @Column(length = 45)
+    @Column(columnDefinition = "VARCHAR(45) DEFAULT NULL")
     private String address;
 
     @Getter
@@ -43,38 +44,21 @@ public class Students {
 
     @Getter
     @Setter
+    @Column(columnDefinition = "DATETIME DEFAULT NULL")
     private Date dob;
 
     @Getter
     @Setter
-    @Column(length = 45)
+    @Column(columnDefinition = "VARCHAR(45) DEFAULT NULL")
     private String email;
 
     @Getter
     @Setter
-    @Column(length = 15)
+    @Column(columnDefinition = "VARCHAR(15) DEFAULT NULL")
     private String mobile;
 
     @Getter
     @Setter
-    @Column(length = 15)
+    @Column(columnDefinition = "VARCHAR(15) DEFAULT NULL")
     private String phone;
 }
-
-// TABLE Student (
-// id int(10) unsigned NOT NULL AUTO_INCREMENT,
-
-// name varchar(45) NOT NULL,
-
-// address varchar(45) DEFAULT NULL,
-// gender char(1) DEFAULT 'M',
-// dob datetime DEFAULT NULL,
-
-// email varchar(45) DEFAULT NULL,
-
-// mobile varchar(15) DEFAULT NULL,
-
-// phone varchar(15) DEFAULT NULL,
-
-// PRIMARY KEY (id)
-// )

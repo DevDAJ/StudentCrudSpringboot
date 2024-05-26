@@ -38,8 +38,13 @@ public class StudentsService {
 
             // Update the properties of the existing entity with the values from the updated
             // entity
+            newStudent.setName(student.getName());
             newStudent.setAddress(student.getAddress());
             newStudent.setDob(student.getDob());
+            newStudent.setGender(student.getGender());
+            newStudent.setEmail(student.getEmail());
+            newStudent.setPhone(student.getPhone());
+            newStudent.setMobile(student.getMobile());
 
             // Save the updated entity back to the database
             return repo.save(newStudent);

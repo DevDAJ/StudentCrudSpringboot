@@ -14,7 +14,7 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(StudentsRepo repo) {
         return args -> {
             if (repo.count() == 0) {
-                repo.save(new Students(0, "Danial", null, 'M', null, null, null, null));
+                repo.save(new Students(0, "Ririn", null, 'M', null, null, null, null));
             } else {
             }
 
